@@ -3913,6 +3913,11 @@ export function add_filter(meta_window) {
     if (Scratch.isScratchWindow(meta_window)) {
         return false;
     }
+    
+    let space = spaces.spaceOf(workspace);
+    if ((space.index == 3) || (space.index == 4)) {
+        return false;
+    }
 
     return true;
 }
