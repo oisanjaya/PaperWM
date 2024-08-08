@@ -3914,7 +3914,7 @@ export function add_filter(meta_window) {
         return false;
     }
     
-    let space = spaces.spaceOf(workspace);
+    let space = spaces.spaceOfWindow(meta_window);
     if ((space.index == 3) || (space.index == 4)) {
         return false;
     }
